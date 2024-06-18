@@ -18,7 +18,7 @@ const App = () => {
         title="obsessed with learning"
         description="I am a self taught, frontend developer with an obsession to master everything I take on. 
           I've been working professionally as a developer for over four years, and as a lead designer for 3 years prior. 
-          I also run a T-shirt company where I design and develop the storefront and products on the side.">
+          I also run a T-shirt e-comm brand where I design and develop the storefront and products on the side.">
       </About>
     </section>
   )
