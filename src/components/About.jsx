@@ -12,7 +12,7 @@ function About(props) {
         </div>
         <div className="lg:w-2/5 h-auto mx-auto bg-gradient-to-br from-white to-cyan-100 rounded-lg lg:absolute lg:right-[2rem] lg:top-[20%]">
           <div className="text-2xl font-bold px-10 pt-8 pb-2">{props.title}</div>
-          <div className="px-10 pb-8 pt-2">{props.description}</div>
+          <div className="px-10 pb-8 pt-2">{props.description} </div>
         </div>
       </div>
     </section>
