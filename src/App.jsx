@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WorkSection from "./components/WorkSection";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           I've been working professionally as a developer for over four years, and as a lead designer for 3 years prior. 
           I also run a T-shirt e-commerce brand where I design and develop the storefront and products on the side.">
       </About>
+      <Footer />
     </section>
   )
 }

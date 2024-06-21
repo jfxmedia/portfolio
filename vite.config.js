@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/portfolio/', 
   build: {
-    outDir: 'build', // Ensure this is where your output is expected
+    homepage: "https://jfxmedia.github.io/portfolio",
+    outDir: 'build',
   },
   plugins: [react()],
   server: {

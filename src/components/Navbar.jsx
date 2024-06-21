@@ -24,9 +24,9 @@ const Navbar = (props) => {
 {/* DESKTOP */}
       <div className='max-lg:hidden lg:flex sm:flex-row py-4 lg:flex-row'>
         <ul className="flex flex-col lg:flex-row">
-          <a className='lg:px-4 py-2 rounded-lg text-lg text-colorDark hover:bg-gradient-to-r from-cyan-100 to-lime-200 cursor-pointer hover:font-bold'>{props.work}</a>
-          <a className='lg:px-4 py-2 rounded-lg text-lg text-colorDark hover:bg-gradient-to-r from-cyan-100 to-lime-200 cursor-pointer hover:font-bold'>{props.about}</a>
-          <a className='lg:px-4 py-2 rounded-lg text-lg text-colorDark hover:bg-gradient-to-r from-cyan-100 to-lime-200 cursor-pointer hover:font-bold'>{props.contact}</a>
+          <a className='lg:px-4 py-2 rounded-xl text-lg text-colorDark hover:bg-gradient-to-r from-cyan-100 to-lime-200 cursor-pointer hover:font-bold'>{props.work}</a>
+          <a className='lg:px-4 py-2 rounded-xl text-lg text-colorDark hover:bg-gradient-to-r from-cyan-100 to-lime-200 cursor-pointer hover:font-bold'>{props.about}</a>
+          <a className='lg:px-4 py-2 rounded-xl text-lg text-colorDark hover:bg-gradient-to-r from-cyan-100 to-lime-200 cursor-pointer hover:font-bold'>{props.contact}</a>
         </ul>
       </div>
 

@@ -35,13 +35,13 @@ const GetData = () => {
     <div className="flex flex-col gap-4">
       <div className="flex flex-row gap-4 text-center justify-center mx-auto">
         <input
-          className='w-[200px] h-[30px] bg-white rounded-lg shadow-xl'
+          className='w-[200px] h-[30px] bg-white rounded-xl shadow-xl'
           value={value}
           type="text"
           onChange={handleInputChange} 
         />
         <button
-          className='w-[200px] rounded-lg bg-cyan-300'
+          className='w-[200px] rounded-xl bg-cyan-300'
           onClick={handleSearch}
         >
           Generate

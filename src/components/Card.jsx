@@ -1,40 +1,54 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react"
+import { useRef } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-const Card = (props, index) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleOpen = () => {
-    setIsOpen(!isOpen)
-  }
+const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description }) => {
+  const contentRef = useRef(null);
 
   return (
-    <section onMouseEnter={()=> toggleOpen()} onMouseLeave={()=> toggleOpen()} className={`relative px-8 py-10 w-full flex flex-col cursor-pointer`}>
-      <img 
-        src={props.src} 
-        href={props.url}
-        alt="" 
-        className='w-full mx-auto h-auto rounded-lg flex drop-shadow-lg'
-      />
-      {isOpen &&
-      <div key={index} className="z-50 bg-white absolute left-0 p-8 flex flex-col w-full h-full">
-        <div className="p-6 flex flex-wrap">
-          <div className="flex flex-col w-full">
-            <div className="flex flex-row">
-              <h2 className='py-4 text-2xl'>{props.title}</h2>
-            </div>
-          </div>
-          <div>
-            <p className="py-4">{props.description}</p>
-            <div className="flex flex-row py-4">
-              {props.icons}
-            </div>
-          </div>
-          <a href={props.href}>{props.url}</a>
+    <section className="mx-8 bg-gradient-to-tl rounded-xl from-cyan-50 to-indigo-50">
+      <div
+        key={index}
+        onClick={toggleOpen}
+        className={`h-auto p-8 w-full my-4 flex flex-col lg:flex-row cursor-pointer`}>
+        <div className="lg:w-1/3 self-start">
+          <img
+            src={src}
+            href={url}
+            alt=""
+            className='w-full mx-auto rounded-xl flex drop-shadow-lg border-2 border-cyan-800'
+          />
         </div>
-      </div>}
+        <div className="py-8 lg:p-10 lg:pt-0 lg:w-2/3 flex flex-col">
+          <div className="flex flex-wrap">
+            <div className="flex flex-col w-full">
+              <div className="flex flex-row">
+                <h2 className='pb-4 text-4xl leading-[3.5rem] text-cyan-800'>{title}</h2>
+              </div>
+            </div>
+            <div className="">
+              <div className="flex flex-row py-4">{icons}</div>
+            </div>
+            <div
+              ref={contentRef}
+              style={{
+                maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : '140px',
+                transition: 'max-height 0.2s ease-out',
+                overflow: 'hidden',
+              }}
+              className={`description-content transition-all duration-300 ease-in-out ${isOpen ? 'description-content-open' : ''}`}>
+              {description}
+            </div>
+            <FontAwesomeIcon
+              className="text-2xl py-4 text-cyan-800"
+              icon={isOpen ? faChevronUp : faChevronDown}
+            />
+          </div>
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

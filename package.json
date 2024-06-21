@@ -3,16 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jfxmedia.github.io/portfolio",
+  "homepage": "http://jfxmedia.github.io/portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "hamburger-react": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
