@@ -9,26 +9,28 @@ import chilisleep from "../assets/images/chilisleep.jpg";
 
 const WorkSection = () => {
   const [openCard, setOpenCard] = useState(null);
+
   const cards = [
     {
       title: "Software Engineer @ Jeandousset LLC",
-      description: `Jeandousset is a high-end luxury jewelry brand based in Los Angeles, CA. 
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Similique repellendus delectus dolorem eligendi! Nihil, 
-        nostrum obcaecati dolore doloribus illum eaque iure vero, 
-        optio eligendi dicta consequuntur sit. Repellat, ea magnam.
-        ipsum dolor sit amet consectetur adipisicing elit. 
-        Similique repellendus delectus dolorem eligendi! Nihil, 
-        nostrum obcaecati dolore doloribus illum eaque iure vero, 
-        optio eligendi dicta consequuntur sit. Repellat, ea magnam.
-        ipsum dolor sit amet consectetur adipisicing elit. 
-        Similique repellendus delectus dolorem eligendi! Nihil, 
-        nostrum obcaecati dolore doloribus illum eaque iure vero, 
-        optio eligendi dicta consequuntur sit. Repellat, ea magnam.
-        ipsum dolor sit amet consectetur adipisicing elit. 
-        Similique repellendus delectus dolorem eligendi! Nihil, 
-        nostrum obcaecati dolore doloribus illum eaque iure vero, 
-        optio eligendi dicta consequuntur sit. Repellat, ea magnam.`,
+      description: ( 
+      <>
+        <div>Jeandousset is a high-end luxury jewelry brand based in Los Angeles, CA.,
+        Jeandousset was at the beginning of a 2 wordpress websites to 1 Shopify Plus ecomm storefront migration 
+        when they hired me as their lead Frontend Developer in addition to their current Backend Developer.
+        High-octane fast paced position, a startup culture with an extremely hands-on ownership requirement which rewarded out of the box problem solving.
+        </div>
+          <ul>
+            <li>Built and revised a huge collection of Metafields used in numerous apps and on the storefront.</li>
+            <li>Led the Klaviyo integration and built numerous complex flows based on API triggers I built.</li>
+            <li>Developed numerous components and landing pages and Product pages.</li>
+            <li>Modifying and revised their checkout experience.</li>
+            <li>Built out third party integrations via the Storefront API and external apps + tracking pixel integration.</li>
+            <li>Data migration and modification, metafield synchronization with manual data imports.</li>
+            <li>Developed 40+ Shopify notification emails built from scratch using Liquid/HTML.</li>
+          </ul>
+      </>
+      ),
       url: "https://www.jeandousset.com",
       href: "https://www.jeandousset.com",
       src: jeandousset,
@@ -44,10 +46,22 @@ const WorkSection = () => {
     },
     {
       title: "Frontend Engineer @ Sleepme",
-      description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Similique repellendus delectus dolorem eligendi! Nihil, 
-        nostrum obcaecati dolore doloribus illum eaque iure vero, 
-        optio eligendi dicta consequuntur sit. Repellat, ea magnam.`,
+      description: (
+      <>
+        <div>Chilitechnology rebranded as Ooler.co followed by Chilisleep and finally Sleepme. 
+        The company built a full in-house development department with an iOS and Android team, 
+        in addition to the Frontend and Backend team where I was employed.
+        </div>
+        <ul>
+          <li>Aided in the development of the SASS style library.</li>
+          <li>Developed theme components with customizable sections and blocks.</li>
+          <li>Optimized and integrated the external apps and pixels into the new Sleep.me storefront.</li>
+          <li>Built out custom affiliate landing pages for 50+ affiliates.</li>
+          <li>Performed Split-testing with Optimize and VWO for landing pages and PDPs.</li>
+          <li>Optimizied SEO on Sleep.me, improved loading times, reduced bloat and apps.</li>
+        </ul>
+      </>
+      ),
       url: "https://www.sleep.me",
       href: "https://www.sleep.me",
       src: chilisleep,
@@ -63,10 +77,28 @@ const WorkSection = () => {
       )
     },
     {
-      title: "Lead Designer @ Chilisleep",
-      description: `Chilitechnology/Chilisleep was a D2C brand focused on the Sleep Health space, which sold a physical product on their digital storefront.
-        I began as the Designer in a 3 person marketing team handling everything from Facebook (at the time) ads, to paper marketing materials and 50' trade show banners, to 3D animation and physical packaging design. 
-        I worked in Shopify exclusively for their new e-commerce store, handling content management to apps and services and all design.`,
+      title: "Lead Designer @ Chilitechnology",
+      description: (
+        <>
+        <div>
+          Chilitechnology was a D2C brand focused on the Sleep Health space, which sold a physical product on their digital storefront.
+          I was hired as the Lead of Design in a 3 person marketing team handling everything from Facebook/Meta ads, to paper marketing materials and 50 foot trade show banners.
+        </div> 
+        <ul>
+          <li>Created 3D and 2D product animations and schematics.</li>
+          <li>Aided in the development of the new Brand Style Guide.</li>
+          <li>Designed thousands of static and animated Facebook, Google, and other PPC ads using keywords and brand assets.</li>
+          <li>Created many landing page assets, images, banners, popups and schematic artwork used on the ecommerce storefront.</li>
+          <li>Created all the merchandise artwork and on-site infographics, both Animated and Static.</li>
+          <li>Designed their proprietary subscription cleaning product packaging and on-site PDP.</li>
+          <li>Helped build and design the structure of physical packaging for the product as well as all paper information and package design.</li> 
+          <li>Owned the Chilitechnology website content management updates and modifcations in Shopify.</li>
+          <li>SEO optimization and best practices constantly executed.</li>
+          <li>Sitespeed monitoring and optimization weekly.</li>
+        </ul>
+        </>
+      )
+        ,
       url: "",
       href: "",
       src: chilitechnology,
@@ -80,14 +112,18 @@ const WorkSection = () => {
       )
     },
     {
-      title: "Owner/Founder",
-      description: `I started a POD T-shirt and apparel company where I design, develop and market the website and its products. 
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-        Similique repellendus delectus dolorem eligendi! Nihil, 
-        nostrum obcaecati dolore doloribus illum eaque iure vero, 
-        optio eligendi dicta consequuntur sit. Repellat, ea magnam.`,
-      url: "https://www.sleep.me",
-      href: "https://www.sleep.me",
+      title: "Owner/Developer",
+      description: (
+        <>
+          <div>I opened a T-shirt and apparel brand where I design, develop and market the website and its products.
+          I developed and built the theme from scratch using Shopify Plus. The goal was to have a simple and clean quick to convert storefront to list
+          my hand made apparel designs inspired by nature and culture. This has been a great side project and has allowed me to keep up to date personally with Shopify and their
+          constant updates and feature releases. A mix of creativity, development and marketing.
+          </div>
+        </>
+        ),
+      url: "https://www.animalinstinctive.com",
+      href: "https://www.animalinstinctive.com",
       src: animalinstinctive,
       icons: (
         <>
@@ -110,7 +146,7 @@ const WorkSection = () => {
           <div className="py-2 text-lg">Some of my professional work history and other projects</div>
         </div>
         {cards.map((card, index) => (
-          <div className="w-full" key={index}>
+          <div className="w-full lg:hover:scale-105 duration-200" key={index}>
             <Card {...card} 
             index={index}
             isOpen={openCard === index}

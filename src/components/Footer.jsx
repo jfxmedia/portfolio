@@ -42,9 +42,9 @@ const Footer = () => {
   };
 
   return (
-    <div className="lg:mx-8">
-      <div className="max-w-7xl mt-16 mx-auto px-8 bg-gradient-to-tl from-teal-100 to-purple-100 rounded-t-xl">
-        <div className="flex flex-col lg:flex-row text-cyan-800">
+    <div className="w-full">
+      <div className="mt-16 px-8 bg-gradient-to-tl from-teal-100 to-purple-100 rounded-t-xl">
+        <div className="flex flex-col lg:flex-row text-cyan-800 max-w-7xl mx-auto">
           <form onSubmit={sendEmail} className='lg:p-10 lg:w-1/2 flex flex-col lg:mr-4'>
             <h2 className='w-full text-6xl text-center font-bold py-8'>let's chat!</h2>
             <label className=' pb-2 text-2xl'>name</label>
@@ -57,11 +57,13 @@ const Footer = () => {
             {stateMessage && <p>{stateMessage}</p>}
           </form>
           <div className="lg:w-1 w-full rounded lg:my-20 bg-white bg-opacity-[.5]"></div>
-          <div className="flex max-w-7xl m-auto text-white">
+          <div className="flex w-1/2 m-auto text-white">
             <div className="flex flex-col p-8 items-baseline text-cyan-800">
               <FontAwesomeIcon href="https://www.linkedin.com/in/jfxmedia" className=" p-4 w-14 h-auto mx-auto text-cyan-800" icon={faLinkedin} /> 
-              <div className="text-3xl p-2">Jesse <span className='font-bold'>Foster</span></div>
-              <div className="text-xl mx-auto">&copy; 2024</div>
+              <div className="text-3xl p-2 text-center">Jesse <span className='font-bold'>Foster &copy; 2024</span>
+                <div className="text-xl mx-auto"></div>
+                <div className="text-xl p-2 mx-auto">This website was created from scratch using Vite + ReactJS, and decorated with TailwindCSS.</div>
+              </div>
             </div>
           </div>
         </div>
