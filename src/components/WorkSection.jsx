@@ -10,6 +10,8 @@ import chilisleep from "../assets/images/chilisleep.jpg";
 const WorkSection = () => {
   const [openCard, setOpenCard] = useState(null);
 
+
+
   const cards = [
     {
       title: "Software Engineer @ Jeandousset LLC",
@@ -20,7 +22,7 @@ const WorkSection = () => {
         when they hired me as their lead Frontend Developer in addition to their current Backend Developer.
         High-octane fast paced position, a startup culture with an extremely hands-on ownership requirement which rewarded out of the box problem solving.
         </div>
-          <ul>
+          <ul className='list-disc list-inside'>
             <li>Built and revised a huge collection of Metafields used in numerous apps and on the storefront.</li>
             <li>Led the Klaviyo integration and built numerous complex flows based on API triggers I built.</li>
             <li>Developed numerous components and landing pages and Product pages.</li>
@@ -52,7 +54,7 @@ const WorkSection = () => {
         The company built a full in-house development department with an iOS and Android team, 
         in addition to the Frontend and Backend team where I was employed.
         </div>
-        <ul>
+        <ul className='list-disc list-inside'>
           <li>Aided in the development of the SASS style library.</li>
           <li>Developed theme components with customizable sections and blocks.</li>
           <li>Optimized and integrated the external apps and pixels into the new Sleep.me storefront.</li>
@@ -84,7 +86,7 @@ const WorkSection = () => {
           Chilitechnology was a D2C brand focused on the Sleep Health space, which sold a physical product on their digital storefront.
           I was hired as the Lead of Design in a 3 person marketing team handling everything from Facebook/Meta ads, to paper marketing materials and 50 foot trade show banners.
         </div> 
-        <ul>
+        <ul className='list-disc list-inside'>
           <li>Created 3D and 2D product animations and schematics.</li>
           <li>Aided in the development of the new Brand Style Guide.</li>
           <li>Designed thousands of static and animated Facebook, Google, and other PPC ads using keywords and brand assets.</li>
