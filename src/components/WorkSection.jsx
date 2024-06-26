@@ -17,16 +17,16 @@ const WorkSection = () => {
       title: "Software Engineer @ Jeandousset LLC",
       description: ( 
       <>
-        <div>Jeandousset is a high-end luxury jewelry brand based in Los Angeles, CA.,
+        <div className='pb-4'>Jeandousset is a high-end luxury jewelry brand based in Los Angeles, CA.,
         Jeandousset was at the beginning of a 2 wordpress websites to 1 Shopify Plus ecomm storefront migration 
         when they hired me as their lead Frontend Developer in addition to their current Backend Developer.
         High-octane fast paced position, a startup culture with an extremely hands-on ownership requirement which rewarded out of the box problem solving.
         </div>
-          <ul className='list-disc list-inside'>
+          <ul className=''>
             <li>Built and revised a huge collection of Metafields used in numerous apps and on the storefront.</li>
             <li>Led the Klaviyo integration and built numerous complex flows based on API triggers I built.</li>
             <li>Developed numerous components and landing pages and Product pages.</li>
-            <li>Modifying and revised their checkout experience.</li>
+            <li>Modified and revised their checkout experience.</li>
             <li>Built out third party integrations via the Storefront API and external apps + tracking pixel integration.</li>
             <li>Data migration and modification, metafield synchronization with manual data imports.</li>
             <li>Developed 40+ Shopify notification emails built from scratch using Liquid/HTML.</li>
@@ -50,11 +50,11 @@ const WorkSection = () => {
       title: "Frontend Engineer @ Sleepme",
       description: (
       <>
-        <div>Chilitechnology rebranded as Ooler.co followed by Chilisleep and finally Sleepme. 
+        <div className='pb-4'>Chilitechnology rebranded as Ooler.co followed by Chilisleep and finally Sleepme. 
         The company built a full in-house development department with an iOS and Android team, 
         in addition to the Frontend and Backend team where I was employed.
         </div>
-        <ul className='list-disc list-inside'>
+        <ul className=''>
           <li>Aided in the development of the SASS style library.</li>
           <li>Developed theme components with customizable sections and blocks.</li>
           <li>Optimized and integrated the external apps and pixels into the new Sleep.me storefront.</li>
@@ -82,11 +82,11 @@ const WorkSection = () => {
       title: "Lead Designer @ Chilitechnology",
       description: (
         <>
-        <div>
+        <div className='pb-4'>
           Chilitechnology was a D2C brand focused on the Sleep Health space, which sold a physical product on their digital storefront.
           I was hired as the Lead of Design in a 3 person marketing team handling everything from Facebook/Meta ads, to paper marketing materials and 50 foot trade show banners.
         </div> 
-        <ul className='list-disc list-inside'>
+        <ul className=''>
           <li>Created 3D and 2D product animations and schematics.</li>
           <li>Aided in the development of the new Brand Style Guide.</li>
           <li>Designed thousands of static and animated Facebook, Google, and other PPC ads using keywords and brand assets.</li>
@@ -144,8 +144,8 @@ const WorkSection = () => {
     <div className='w-full'>
       <div className="w-full lg:mx-auto max-w-6xl flex flex-wrap justify-between">
         <div className="px-8 py-10 w-full flex flex-col text-center">
-          <div className="text-6xl py-4 text-cyan-800 font-bold">my work</div>
-          <div className="py-2 text-lg">Some of my professional work history and other projects</div>
+          <div className="text-6xl py-4 text-cyan-700 font-bold">my work</div>
+          <div className="py-2 text-lg">Some of my professional work and other projects.</div>
         </div>
         {cards.map((card, index) => (
           <div className="w-full lg:hover:scale-105 duration-200" key={index}>
