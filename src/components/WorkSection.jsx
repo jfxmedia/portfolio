@@ -1,5 +1,6 @@
+/* eslint-disable react/display-name */
 import Card from '../components/Card';
-import { useState } from 'react';
+import { useState, forwardRef } from 'react';
 import { FaShopify, FaHtml5, FaGithub, FaCss3Alt } from "react-icons/fa6";
 import { SiJavascript, SiAdobecreativecloud } from "react-icons/si";
 import jeandousset from "../assets/images/jeandousset.jpg";
@@ -7,10 +8,8 @@ import animalinstinctive from "../assets/images/animalinstinctive.jpg";
 import chilitechnology from "../assets/images/chilitechnology.jpg";
 import chilisleep from "../assets/images/chilisleep.jpg";
 
-const WorkSection = () => {
+const WorkSection = forwardRef((props, ref) => {
   const [openCard, setOpenCard] = useState(null);
-
-
 
   const cards = [
     {
@@ -118,8 +117,7 @@ const WorkSection = () => {
       description: (
         <>
           <div>I opened a T-shirt and apparel brand where I design, develop and market the website and its products.
-          I developed and built the theme from scratch using Shopify Plus. The goal was to have a simple and clean quick to convert storefront to list
-          my hand made apparel designs inspired by nature and culture. This has been a great side project and has allowed me to keep up to date personally with Shopify and their
+          The goal was to have a simple and clean quick to convert storefront to list my hand made apparel designs inspired by nature and culture. This has been a great side project and has allowed me to keep up to date personally with Shopify and their
           constant updates and feature releases. A mix of creativity, development and marketing.
           </div>
         </>
@@ -139,16 +137,17 @@ const WorkSection = () => {
       )
     }
   ];
-  
+
+
   return (
-    <div className='w-full'>
-      <div className="w-full lg:mx-auto max-w-6xl flex flex-wrap justify-between">
+    <div ref={ref} className='w-full bg-fuchsia-50 pb-20'>
+      <div className="w-full lg:mx-auto max-w-6xl flex flex-wrap justify-between ">
         <div className="px-8 py-10 w-full flex flex-col text-center">
           <div className="text-6xl py-4 text-cyan-700 font-bold">my work</div>
           <div className="py-2 text-lg">Some of my professional work and other projects.</div>
         </div>
         {cards.map((card, index) => (
-          <div className="w-full lg:hover:scale-105 duration-200" key={index}>
+          <div className="w-full duration-100" key={index}>
             <Card {...card} 
             index={index}
             isOpen={openCard === index}
@@ -158,8 +157,7 @@ const WorkSection = () => {
         ))}
       </div>
     </div>
-
   );
-}
+});
 
 export default WorkSection;

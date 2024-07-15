@@ -11,6 +11,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .description-content {
   position: relative;
   overflow: hidden; 

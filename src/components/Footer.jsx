@@ -43,7 +43,7 @@ const Footer = () => {
 
   return (
     <div className="w-full">
-      <div className="mt-16 px-8 bg-gradient-to-tl from-teal-100 to-purple-100 rounded-t-xl">
+      <div className="px-8 rounded-t-xl bg-gradient-to-br from-blue-200 to-fuchsia-300">
         <div className="flex flex-col lg:flex-row text-cyan-700 max-w-7xl mx-auto">
           <form onSubmit={sendEmail} className='lg:p-10 lg:w-1/2 flex flex-col lg:mr-4'>
             <h2 className='w-full text-6xl text-center font-bold py-8'>let's chat!</h2>
@@ -53,7 +53,7 @@ const Footer = () => {
             <input type="email" name="user_email" className='border-cyan-700 border-2 bg-white rounded-xl shadow-lg' required />
             <label className=' py-2 text-2xl'>message</label>
             <textarea name="message" className='border-cyan-700 border-2 bg-white rounded-xl shadow-lg' required />
-            <input type="submit" value="Send" className='bg-white shadow-lg border-cyan-700 border-2 cursor-pointer lowercase text-2xl py-2 my-8 w-1/4 rounded-xl' disabled={isSubmitting} />
+            <input type="submit" value="Send" className='bg-white shadow-lg border-cyan-700 border-2 cursor-pointer lowercase text-2xl py-2 my-8 lg:w-1/4 rounded-xl' disabled={isSubmitting} />
             {stateMessage && <p>{stateMessage}</p>}
           </form>
           <div className="lg:w-1 w-full rounded lg:my-20 bg-white bg-opacity-[.5]"></div>

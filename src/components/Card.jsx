@@ -7,20 +7,20 @@ const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description }
   const contentRef = useRef(null);
 
   return (
-    <section className="mx-8 bg-gradient-to-tl rounded-xl from-cyan-50 to-indigo-50">
+    <section className="mx-4 bg-white rounded-xl">
       <div
         key={index}
         onClick={toggleOpen}
-        className={`h-auto p-8 w-full my-4 flex flex-col lg:flex-row cursor-pointer`}>
+        className={` rounded-xl shadow-lg lg:hover:border-2 border-cyan-700 h-auto p-8 w-full my-4 flex flex-col lg:flex-row cursor-pointer`}>
         <div className="lg:w-1/3 self-start">
           <img
             src={src}
             href={url}
             alt=""
-            className='w-full mx-auto rounded-xl flex drop-shadow-lg border-2 border-cyan-700'
+            className='w-full mx-auto rounded-xl flex shadow-lg border-2 border-cyan-700'
           />
         </div>
-        <div className="py-8 lg:p-10 lg:pt-0 lg:w-2/3 flex flex-col">
+        <div className="lg:px-10 lg:pt-0 lg:w-2/3 flex flex-col">
           <div className="flex flex-wrap">
             <div className="flex flex-col w-full">
               <div className="flex flex-row">
