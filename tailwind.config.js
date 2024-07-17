@@ -16,6 +16,7 @@ export default {
       },
       colors: {
         'colorDark': '#2f2f2f',
+        'colorTeal': '#40738d'
       },
       keyframes: {
         bounceLimited: {

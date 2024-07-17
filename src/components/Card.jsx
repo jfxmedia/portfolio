@@ -17,7 +17,7 @@ const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description }
             src={src}
             href={url}
             alt=""
-            className='w-full mx-auto rounded-xl flex shadow-lg border-2 border-cyan-700'
+            className='w-full mx-auto mb-4 lg:mb-0 rounded-xl flex shadow-lg border-2 border-cyan-700'
           />
         </div>
         <div className="lg:px-10 lg:pt-0 lg:w-2/3 flex flex-col">
@@ -40,8 +40,8 @@ const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description }
               className={`description-content transition-all duration-300 ease-in-out ${isOpen ? 'description-content-open' : ''}`}>
               {description}
               <div className="py-4 font-bold text-cyan-700 hover:translate-x-[15px] transition-all ease-in-out">
-                {url ? <a href={url}  target="_blank" rel="noreferrer">
-                  Visit {url.replace("https://", "")} 
+                visit {url ? <a href={url} className="underline" target="_blank" rel="noreferrer">
+                  {url.replace("https://", "")} 
                   <FontAwesomeIcon className="px-2 text-xl" icon={faArrowRight} />
                 </a> : ""}
               </div>

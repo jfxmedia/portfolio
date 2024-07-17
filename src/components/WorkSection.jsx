@@ -2,15 +2,18 @@
 import Card from '../components/Card';
 import { useState, forwardRef } from 'react';
 import { FaShopify, FaHtml5, FaGithub, FaCss3Alt } from "react-icons/fa6";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { SiJavascript, SiAdobecreativecloud } from "react-icons/si";
 import jeandousset from "../assets/images/jeandousset.jpg";
 import animalinstinctive from "../assets/images/animalinstinctive.jpg";
 import chilitechnology from "../assets/images/chilitechnology.jpg";
 import chilisleep from "../assets/images/chilisleep.jpg";
+import fxweather from "../assets/images/fxweather.jpg";
 
 const WorkSection = forwardRef((props, ref) => {
   const [openCard, setOpenCard] = useState(null);
-
+    
   const cards = [
     {
       title: "Software Engineer @ Jeandousset LLC",
@@ -22,13 +25,12 @@ const WorkSection = forwardRef((props, ref) => {
         High-octane fast paced position, a startup culture with an extremely hands-on ownership requirement which rewarded out of the box problem solving.
         </div>
           <ul className=''>
-            <li>Built and revised a huge collection of Metafields used in numerous apps and on the storefront.</li>
-            <li>Led the Klaviyo integration and built numerous complex flows based on API triggers I built.</li>
-            <li>Developed numerous components and landing pages and Product pages.</li>
-            <li>Modified and revised their checkout experience.</li>
-            <li>Built out third party integrations via the Storefront API and external apps + tracking pixel integration.</li>
-            <li>Data migration and modification, metafield synchronization with manual data imports.</li>
-            <li>Developed 40+ Shopify notification emails built from scratch using Liquid/HTML.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed numerous components and landing pages and Product pages.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Modified and revised their checkout experience.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Led the Klaviyo integration and built numerous complex flows based on API triggers I built.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Built out third party integrations via the Storefront API and external apps + tracking pixel integration.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Data migration and modification, metafield synchronization with manual data imports.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed 40+ Shopify notification emails built from scratch using Liquid/HTML.</li>
           </ul>
       </>
       ),
@@ -54,12 +56,12 @@ const WorkSection = forwardRef((props, ref) => {
         in addition to the Frontend and Backend team where I was employed.
         </div>
         <ul className=''>
-          <li>Aided in the development of the SASS style library.</li>
-          <li>Developed theme components with customizable sections and blocks.</li>
-          <li>Optimized and integrated the external apps and pixels into the new Sleep.me storefront.</li>
-          <li>Built out custom affiliate landing pages for 50+ affiliates.</li>
-          <li>Performed Split-testing with Optimize and VWO for landing pages and PDPs.</li>
-          <li>Optimizied SEO on Sleep.me, improved loading times, reduced bloat and apps.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Aided in the development of the SASS style library.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed theme components with customizable sections and blocks.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Optimized and integrated the external apps and pixels into the new Sleep.me storefront.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Built out custom affiliate landing pages for 50+ affiliates.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Performed Split-testing with Optimize and VWO for landing pages and PDPs.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Optimizied SEO on Sleep.me, improved loading times, reduced bloat and apps.</li>
         </ul>
       </>
       ),
@@ -86,16 +88,16 @@ const WorkSection = forwardRef((props, ref) => {
           I was hired as the Lead of Design in a 3 person marketing team handling everything from Facebook/Meta ads, to paper marketing materials and 50 foot trade show banners.
         </div> 
         <ul className=''>
-          <li>Created 3D and 2D product animations and schematics.</li>
-          <li>Aided in the development of the new Brand Style Guide.</li>
-          <li>Designed thousands of static and animated Facebook, Google, and other PPC ads using keywords and brand assets.</li>
-          <li>Created many landing page assets, images, banners, popups and schematic artwork used on the ecommerce storefront.</li>
-          <li>Created all the merchandise artwork and on-site infographics, both Animated and Static.</li>
-          <li>Designed their proprietary subscription cleaning product packaging and on-site PDP.</li>
-          <li>Helped build and design the structure of physical packaging for the product as well as all paper information and package design.</li> 
-          <li>Owned the Chilitechnology website content management updates and modifcations in Shopify.</li>
-          <li>SEO optimization and best practices constantly executed.</li>
-          <li>Sitespeed monitoring and optimization weekly.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Created 3D and 2D product animations and schematics.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Aided in the development of the new Brand Style Guide.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Designed thousands of static and animated Facebook, Google, and other PPC ads using keywords and brand assets.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Created many landing page assets, images, banners, popups and schematic artwork used on the ecommerce storefront.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Created all the merchandise artwork and on-site infographics, both Animated and Static.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Designed their proprietary subscription cleaning product packaging and on-site PDP.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Helped build and design the structure of physical packaging for the product as well as all paper information and package design.</li> 
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Owned the Chilitechnology website content management updates and modifcations in Shopify.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />SEO optimization and best practices constantly executed.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Sitespeed monitoring and optimization weekly.</li>
         </ul>
         </>
       )
@@ -113,7 +115,7 @@ const WorkSection = forwardRef((props, ref) => {
       )
     },
     {
-      title: "Owner/Developer",
+      title: "Animal Instinctive",
       description: (
         <>
           <div>I opened a T-shirt and apparel brand where I design, develop and market the website and its products.
@@ -125,6 +127,30 @@ const WorkSection = forwardRef((props, ref) => {
       url: "https://www.animalinstinctive.com",
       href: "https://www.animalinstinctive.com",
       src: animalinstinctive,
+      icons: (
+        <>
+          <FaShopify className='mr-4 w-10 h-auto text-lime-400' />
+          <FaGithub className='mr-4 w-10 h-auto text-slate-900' />
+          <SiJavascript className='mr-4 w-10 h-auto text-yellow-300'/>
+          <FaHtml5 className='mr-4 w-10 h-auto text-orange-400' />
+          <FaCss3Alt className='mr-4 w-10 h-auto text-blue-500' />
+          <SiAdobecreativecloud className='mr-4 w-10 h-auto text-red-500'/>
+        </>
+      )
+    },
+    {
+      title: "fxWeather",
+      description: (
+        <>
+          <div>As a too frequent user of countless weather apps, I decided to make my own using some free APIs.
+            I plan to build this out in my free time to integrate new features I think up. This quickly became pretty complex as I developed features and functions, but as it grows, so does my imagination. 
+            Check it out!
+          </div>
+        </>
+        ),
+      url: "https://jfxmedia.github.io/fxWeather/",
+      href: "https://jfxmedia.github.io/fxWeather/",
+      src: fxweather,
       icons: (
         <>
           <FaShopify className='mr-4 w-10 h-auto text-lime-400' />

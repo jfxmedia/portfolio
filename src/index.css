@@ -35,3 +35,10 @@ html {
   mask-image: none;
   -webkit-mask-image: none;
 }
+
+li {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+
