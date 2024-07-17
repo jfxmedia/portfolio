@@ -1,4 +1,4 @@
-# JFX Media - Personal Frontend Developer Portfolio
+# JFXMedia - Personal Frontend Developer Portfolio
 
 Welcome to the repository for my personal frontend developer portfolio website, [JFX Media](https://www.jfxmedia.com). This website showcases my skills, projects, and experience as a frontend developer. It is built using React, Vite, and TailwindCSS to provide a modern and responsive user experience.
 
