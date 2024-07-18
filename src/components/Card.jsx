@@ -2,8 +2,10 @@
 import { useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FaGithub } from "react-icons/fa6";
 
-const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description }) => {
+
+const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description, git_link }) => {
   const contentRef = useRef(null);
 
   return (
@@ -12,7 +14,7 @@ const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description }
         key={index}
         onClick={toggleOpen}
         className={` rounded-xl shadow-lg lg:hover:border-2 border-cyan-700 h-auto p-8 w-full my-4 flex flex-col lg:flex-row cursor-pointer`}>
-        <div className="lg:w-1/3 self-start">
+        <div className="lg:w-2/5 self-start">
           <img
             src={src}
             href={url}
@@ -20,7 +22,7 @@ const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description }
             className='w-full mx-auto mb-4 lg:mb-0 rounded-xl flex shadow-lg border-2 border-cyan-700'
           />
         </div>
-        <div className="lg:px-10 lg:pt-0 lg:w-2/3 flex flex-col">
+        <div className="lg:px-10 lg:pt-0 lg:w-3/5 flex flex-col">
           <div className="flex flex-wrap">
             <div className="flex flex-col w-full">
               <div className="flex flex-row">
@@ -39,11 +41,18 @@ const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description }
               }}
               className={`description-content transition-all duration-300 ease-in-out ${isOpen ? 'description-content-open' : ''}`}>
               {description}
-              <div className="py-4 font-bold text-cyan-700 hover:translate-x-[15px] transition-all ease-in-out">
-                visit {url ? <a href={url} className="underline" target="_blank" rel="noreferrer">
+              <div className="py-4 flex flex-col font-bold text-cyan-700">
+                {url ? <a href={url} className="underline hover:translate-x-[10px] transition-all ease-in-out" target="_blank" rel="noreferrer">
                   {url.replace("https://", "")} 
-                  <FontAwesomeIcon className="px-2 text-xl" icon={faArrowRight} />
+                  <FontAwesomeIcon 
+                  className="px-2 text-xl " 
+                  icon={faArrowRight} />
                 </a> : ""}
+                { git_link ? 
+                  <a href={git_link} target="_blank" rel="noreferrer noopener" className="text-xl underline hover:translate-x-[10px] transition-all ease-in-out py-4 flex flex-row">
+                    <FaGithub  href={git_link} />
+                    <FontAwesomeIcon className="px-2" icon={faArrowRight} />
+                  </a> : '' }
               </div>
             </div>
             <FontAwesomeIcon

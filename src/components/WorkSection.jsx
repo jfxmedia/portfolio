@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import Card from '../components/Card';
 import { useState, forwardRef } from 'react';
-import { FaShopify, FaHtml5, FaGithub, FaCss3Alt } from "react-icons/fa6";
+import { FaShopify, FaHtml5, FaGithub, FaCss3Alt, FaBootstrap, FaVuejs } from "react-icons/fa6";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { SiJavascript, SiAdobecreativecloud } from "react-icons/si";
@@ -10,6 +10,7 @@ import animalinstinctive from "../assets/images/animalinstinctive.jpg";
 import chilitechnology from "../assets/images/chilitechnology.jpg";
 import chilisleep from "../assets/images/chilisleep.jpg";
 import fxweather from "../assets/images/fxweather.jpg";
+import portfolio from "../assets/images/portfolio.jpg";
 
 const WorkSection = forwardRef((props, ref) => {
   const [openCard, setOpenCard] = useState(null);
@@ -19,18 +20,19 @@ const WorkSection = forwardRef((props, ref) => {
       title: "Software Engineer @ Jeandousset LLC",
       description: ( 
       <>
-        <div className='pb-4'>Jeandousset is a high-end luxury jewelry brand based in Los Angeles, CA.,
-        Jeandousset was at the beginning of a 2 wordpress websites to 1 Shopify Plus ecomm storefront migration 
+        <div className='pb-4'>Jeandousset is a high-end luxury jewelry brand based in Los Angeles.
+        JD was at the beginning of a 2 dated and malfunctioning websites to <span className='font-bold'>1 Shopify Plus</span> e-commerce storefront migration, 
         when they hired me as their lead Frontend Developer in addition to their current Backend Developer.
-        High-octane fast paced position, a startup culture with an extremely hands-on ownership requirement which rewarded out of the box problem solving.
+        High-octane fast paced position, a startup culture with an extreme hands-on ownership requirement which rewarded out of the box problem solving.
         </div>
           <ul className=''>
-            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed numerous components and landing pages and Product pages.</li>
-            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Modified and revised their checkout experience.</li>
-            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Led the Klaviyo integration and built numerous complex flows based on API triggers I built.</li>
-            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Built out third party integrations via the Storefront API and external apps + tracking pixel integration.</li>
-            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Data migration and modification, metafield synchronization with manual data imports.</li>
-            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed 40+ Shopify notification emails built from scratch using Liquid/HTML.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />I was responsible for developing the custom frontend of the current JD website including static and dynamic components, animations and layouts from Figma designs.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Modified and revised their frontend checkout experience including payment vendor integrations.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Led the Klaviyo integration, built numerous custom email flows based on custom API triggers I built.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Built out third party integrations via the Admin API and Flow, integrated third party apps & pixels.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Data migration and modification, synced metafields from manual matrixify imports.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Built out their on-site UGC experience, quiz forms, and some designs when needed.</li>
+            <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed 40+ Shopify notification emails built from scratch using Shopify Liquid + HTML/CSS.</li>
           </ul>
       </>
       ),
@@ -48,20 +50,24 @@ const WorkSection = forwardRef((props, ref) => {
       )
     },
     {
-      title: "Frontend Engineer @ Sleepme",
+      title: "Frontend Engineer @ Chilisleep/Sleepme",
       description: (
       <>
         <div className='pb-4'>Chilitechnology rebranded as Ooler.co followed by Chilisleep and finally Sleepme. 
-        The company built a full in-house development department with an iOS and Android team, 
-        in addition to the Frontend and Backend team where I was employed.
+        The company built a full in-house development department with an iOS and Android team, in addition to the Frontend and Backend team where I was employed. 
+        The transition from Chilisleep to Sleepme began with a brand new <span className='font-bold'>Headless CMS</span> setup with <span className='font-bold'>Shopify</span> & <span className='font-bold'>Strapi</span> on the backend, with <span className='font-bold'>Vue</span> + <span className='font-bold'>NuxtJS</span> + <span className='font-bold'>Bootstrap</span> on the frontend.
         </div>
         <ul className=''>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Optimized and integrated the external app library and pixels into the new headless Sleepme storefront.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed Vue components for the new Sleepme frontend.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Integrated and ammended the new bootstrap library with fresh component buildouts.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Handled the complete integration of third party pixels using Segment + Tag Manager.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed theme components with customizable sections and blocks for Chilisleep.</li>
           <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Aided in the development of the SASS style library.</li>
-          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed theme components with customizable sections and blocks.</li>
-          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Optimized and integrated the external apps and pixels into the new Sleep.me storefront.</li>
-          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Built out custom affiliate landing pages for 50+ affiliates.</li>
-          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Performed Split-testing with Optimize and VWO for landing pages and PDPs.</li>
-          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Optimizied SEO on Sleep.me, improved loading times, reduced bloat and apps.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Built out custom affiliate landing pages for 50+ affiliates using Shopify.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Performed AB testing with Optimize and VWO for landing pages and PDPs.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Optimizied SEO on Chilisleep, improved loading times, reduced bloat and apps.</li>
+          <li className='pb-1'><FontAwesomeIcon icon={faCaretRight} className='pr-2 text-colorTeal' />Developed Klaviyo flows and emails.</li>
         </ul>
       </>
       ),
@@ -70,6 +76,8 @@ const WorkSection = forwardRef((props, ref) => {
       src: chilisleep,
       icons: (
         <>
+          <FaVuejs className='mr-4 w-10 h-auto text-lime-900' />
+          <FaBootstrap className='mr-4 w-10 h-auto text-purple-700' />
           <FaShopify className='mr-4 w-10 h-auto text-lime-400' />
           <FaGithub className='mr-4 w-10 h-auto text-slate-900' />
           <SiJavascript className='mr-4 w-10 h-auto text-yellow-300'/>
@@ -107,9 +115,9 @@ const WorkSection = forwardRef((props, ref) => {
       src: chilitechnology,
       icons: (
         <>
+          <FaShopify className='mr-4 w-10 h-auto text-lime-400' />
           <SiAdobecreativecloud className='mr-4 w-10 h-auto text-red-500'/>
           <FaCss3Alt className='mr-4 w-10 h-auto text-blue-500' />
-          <FaShopify className='mr-4 w-10 h-auto text-lime-400' />
           <FaHtml5 className='mr-4 w-10 h-auto text-orange-400' />
         </>
       )
@@ -127,6 +135,7 @@ const WorkSection = forwardRef((props, ref) => {
       url: "https://www.animalinstinctive.com",
       href: "https://www.animalinstinctive.com",
       src: animalinstinctive,
+      git_link: "https://github.com/jfxmedia/animal",
       icons: (
         <>
           <FaShopify className='mr-4 w-10 h-auto text-lime-400' />
@@ -150,15 +159,37 @@ const WorkSection = forwardRef((props, ref) => {
         ),
       url: "https://jfxmedia.github.io/fxWeather/",
       href: "https://jfxmedia.github.io/fxWeather/",
+      git_link: "https://github.com/jfxmedia/fxweather",
       src: fxweather,
       icons: (
         <>
-          <FaShopify className='mr-4 w-10 h-auto text-lime-400' />
           <FaGithub className='mr-4 w-10 h-auto text-slate-900' />
           <SiJavascript className='mr-4 w-10 h-auto text-yellow-300'/>
           <FaHtml5 className='mr-4 w-10 h-auto text-orange-400' />
           <FaCss3Alt className='mr-4 w-10 h-auto text-blue-500' />
           <SiAdobecreativecloud className='mr-4 w-10 h-auto text-red-500'/>
+        </>
+      )
+    },
+    {
+      title: "Portfolio",
+      description: (
+        <>
+          <div>You are here. My goal here was to make a simple but clean Portfolio page where any professional and personal digiital projects can live. 
+            I built this in <span className='font-bold'>React</span> & <span className='font-bold'>Vite</span> and <span className='font-bold'>TailwindCSS</span> and used <span className='font-bold'>Fontawesome</span> for the icons.
+          </div>
+        </>
+        ),
+      url: "https://jfxmedia.com",
+      href: "https://jfxmedia.com",
+      git_link: "https://github.com/jfxmedia/portfolio",
+      src: portfolio,
+      icons: (
+        <>
+          <FaGithub className='mr-4 w-10 h-auto text-slate-900' />
+          <SiJavascript className='mr-4 w-10 h-auto text-yellow-300'/>
+          <FaHtml5 className='mr-4 w-10 h-auto text-orange-400' />
+          <FaCss3Alt className='mr-4 w-10 h-auto text-blue-500' />
         </>
       )
     }
