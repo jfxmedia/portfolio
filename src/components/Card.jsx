@@ -14,7 +14,7 @@ const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description, 
         key={index}
         onClick={toggleOpen}
         className={` rounded-xl shadow-lg lg:hover:border-2 border-cyan-700 h-auto p-8 w-full my-4 flex flex-col lg:flex-row cursor-pointer`}>
-        <div className="lg:w-2/5 self-start">
+        <div className="lg:w-1/3">
           <img
             src={src}
             href={url}
@@ -22,7 +22,7 @@ const Card = ({ index, isOpen, toggleOpen, src, url, title, icons, description, 
             className='w-full mx-auto mb-4 lg:mb-0 rounded-xl flex shadow-lg border-2 border-cyan-700'
           />
         </div>
-        <div className="lg:px-10 lg:pt-0 lg:w-3/5 flex flex-col">
+        <div className="lg:px-10 lg:pt-0 lg:w-2/3 flex flex-col">
           <div className="flex flex-wrap">
             <div className="flex flex-col w-full">
               <div className="flex flex-row">

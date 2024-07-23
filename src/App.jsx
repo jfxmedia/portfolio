@@ -1,17 +1,16 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WorkSection from "./components/WorkSection";
-import About from "./components/About";
+// import About from "./components/About";
 import Footer from "./components/Footer";
 import { useRef } from "react";
-
 
 const App = () => {
 
   const workSectionRef = useRef(null)
 
   return (
-    <section className="">
+    <section className="relative">
       <Navbar />
       <Hero 
         title="beautiful digital experiences" 

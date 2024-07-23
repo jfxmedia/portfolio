@@ -176,7 +176,7 @@ const WorkSection = forwardRef((props, ref) => {
       description: (
         <>
           <div>You are here. My goal here was to make a simple but clean Portfolio page where any professional and personal digiital projects can live. 
-            I built this in <span className='font-bold'>React</span> & <span className='font-bold'>Vite</span> and <span className='font-bold'>TailwindCSS</span> and used <span className='font-bold'>Fontawesome</span> for the icons.
+            I built this in <span className='font-bold'>React + Vite</span> with <span className='font-bold'>TailwindCSS</span> and used <span className='font-bold'>Fontawesome</span> for the icons.
           </div>
         </>
         ),
